@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanimljiva Geografija</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <button><a href=index.html>Početna strana</a></button>
+                <button><a href=predlaganje.html>Dodaj pojam</a></button>
+            </nav>
+        </header>
+    </div>
+    <form id="formUsername">
+        <input type="text" name="inputUsername" id="inputUsername" placeholder="Upiši korisničko ime...">
+        <input type="submit" value="Potvrdi" id="btnUpdateUsername" class="btn">
+    </form>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyD5tHzdwfDSELZTdolsY-bNNtm0oABr5CA",
+        authDomain: "zgeografija-1c609.firebaseapp.com",
+        databaseURL: "https://zgeografija-1c609.firebaseio.com",
+        projectId: "zgeografija-1c609",
+        storageBucket: "zgeografija-1c609.appspot.com",
+        messagingSenderId: "219618287112",
+        appId: "1:219618287112:web:a5a4f5dee2dd887164bbbd",
+        measurementId: "G-C2E6MS1TTT"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    let db = firebase.firestore();
+    </script>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
